@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title><%= title %></title>
+	<link rel="stylesheet" href="/css/ucenter.css">
+	<script type="text/javascript" src="/js/ucenter.js"></script>
+</head>
+<body>
+	<div id="container">
+		<div id="myMeet">
+			<h3>我订的会</h3>
+			<ul id="myUl">
+				
+			</ul>
+		</div>
+
+		<div id="myInfo">
+			<h3>个人资料</h3>
+			<div>
+				电话：<%= myTel %><br>
+				密码：<%= myPwd %><br>
+				姓名：<%= myName %><br>
+				单位：<%= myUnit %><br>
+				<button id="btnChange">修改资料</button> <button id="btnOut">退出登录</button>
+			</div>
+		</div>
+		<h3><a href="/">→回到首页</a></h3>
+	</div>
+
+	<div id="shade">
+		<div id="formInfo">
+			<form id="myForm">
+				<div class="formField">电话：<input id="readonly" type="text" value="<%= myTel %>" readonly="readonly"></div>
+				<div class="formField">密码：<input type="text" value="<%= myPwd %>" name="myPwd"></div>
+				<div class="formField">姓名：<input type="text" value="<%= myName %>" name="myName"></div>
+				<div class="formField">单位：<input type="text" value="<%= myUnit %>" name='myUnit'></div>
+				<div class="formField"><button id="btnSure">确定修改</button> <button id="btnCancel">放弃修改</button></div>
+			</form>
+		</div>
+	</div>
+
+
+</body>
+</html>

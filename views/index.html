@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title><%= title %></title>
+	<link rel="stylesheet" href="/css/index.css">
+	<script type="text/javascript" src="/js/index.js"></script>
+</head>
+<body>
+	<div id="gridContainer">
+		<div id="meetShow">
+			
+			<ul id="meetUl">
+				
+			</ul>
+			
+		</div>
+
+
+		<div id="meetSub">
+			<div id="welcome">
+				欢迎你，<a href="/users/ucenter"><%= currentName %></a>
+			</div>
+
+			<form action="">
+				<div class="formField">
+					<label for="">会议室</label><br>
+					<div id="allRoom">
+						<div class="meetingRoom"><input id="one" type="radio" name="room" value="101"><label for="one">101（46人）</label></div>
+						<div class="meetingRoom"><input id="two" type="radio" name="room" value="102"><label for="two">102（接待室）</label></div>
+						<div class="meetingRoom"><input id="three" type="radio" name="room" value="201"><label for="three">202（60人）</label></div>
+						<div class="meetingRoom"><input id="fourth" type="radio" name="room" value="202"><label for="fourth">201（42人）</label></div>
+						<div class="meetingRoom"><input id="five" type="radio" name="room" value="203"><label for="five">203（84人）</label></div>
+						<div class="meetingRoom"><input id="six" type="radio" name="room" value="301"><label for="six">301（168人）</label></div>
+						<div class="meetingRoom"><input id="seven" type="radio" name="room" value="报告厅"><label for="seven">报告厅（834人）</label></div>
+					</div>
+				</div>
+
+				<div class="formField">
+					<label for="">会议日期</label><br>
+					<input type="date" name="date" min="">
+				</div>
+
+				<div class="formField">
+					<label for="">会议时间</label><br>
+					<div id="allTime">
+						<div class="meetingTime"><input id="eight" type="radio" name="time" value="上午"><label for="eight">上午</label></div>
+						<div class="meetingTime"><input id="nine" type="radio" name="time" value="下午"><label for="nine">下午</label></div>
+						<div class="meetingTime"><input id="ten" type="radio" name="time" value="晚上"><label for="ten">晚上</label></div>
+					</div>
+				</div>
+
+				<div class="formField">
+					<label for="">会议主题</label><br>
+					<input id="inputTheme" type="text" name="theme" size="38">
+				</div>
+
+				<div class="formField">
+					<label for="">备注</label><br>
+					<textarea id="remark" cols="40" rows="10" placeholder="参会人数、是否需要投影等说明，可不填。"></textarea>
+				</div>
+
+				<div class="formField">
+					<button>我要订会</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</body>
+</html>
